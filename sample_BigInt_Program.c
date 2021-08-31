@@ -1,5 +1,5 @@
 // Sample Program to understand working of BigInt library:
-
+//Note: please read readme file first to understand how things are working here.
 #include <stdio.h>
 #include "BigInt.h"
 
