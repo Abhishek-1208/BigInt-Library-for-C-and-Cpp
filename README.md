@@ -86,61 +86,61 @@ ___
 
 ##### 1. To check whether given input is a number or not:
 
-
-   Syntax: &nbsp;&nbsp;&nbsp;           is_num(var1); <br>
-   Task:             &emsp;checks whether given input is a number or not. <br> 
+<pre>
+   Syntax:           is_num(var1); <br>
+   Task:             checks whether given input is a number or not. <br> 
    return type:      int. returns 0 if input is not a number otherwise 1. <br>
    Algorithm Used:   Simple check. <br>
    Time Complexity:  O(n) , where n = digits in var1 <br>
    Space Complexity: O(1) <br>
-
+</pre>
 
 ##### 2. To crop the extra part if user entered. For eg: -00123 will be croped to -123 and 0028 will be croped down to 28.
 
-
+<pre>
    Syntax:           crop(var1);<br>
    Task:             crop the unnecessary part.<br>
    return type:      void<br>
    Algorithm Used:   Simple implementation<br>
    Time Complexity:  O(n) , where n = digits in var1<br>
    Space Complexity: O(1)<br>
-
+</pre>
 
 ___
 
 #### Some Standard Functions:
 
 ##### To take Input from user:
-
+<pre>
    Syntax:      struct BigInt *var_name = _input();<br>
    return Type: struct BigInt*<br>
    Exception:   throws error if input is not a number<br>
-
+</pre>
 
 ##### To Print Values:
-
+<pre>
    Syntax:     _print(struct BigInt *inp)   : print the value without putting end of line after the number.<br>
    Syntax:     _println(struct BigInt *inp) : print the value and move the cursor to next line.<br>
    return type: void for both.<br>
-
+</pre>
 ___
 
 #### Arithmetic Operations: 
+<pre>
+##### Addition:       add(var1, var2);        equivalent to var1 + var2
 
-###### Addition: add(var1, var2);    equivalent to var1 + var2
+##### Subtraction:    subtract(var1, var2);   equivalent to var1 - var2
 
-###### Subtraction: subtract(var1, var2);  equivalent to var1 - var2
+##### Multiplication: multiply(var1, var2);   equivalent to var1 * var2
 
-###### Multiplication: multiply(var1, var2);  equivalent to var1 * var2
+##### Division:       divide(var1, var2);     equivalent to var1 / var2
 
-###### Division: divide(var1, var2);    equivalent to var1 / var2
-
-###### Modular: modulo(var1, var2);     equivalent to var1 % var2
-
+##### Modular:        modulo(var1, var2);     equivalent to var1 % var2
+</pre>
 
 
 ##### 1. Addition: 
-
+<pre>
    Syntax:           add(var1, var2);<br>
    Task:             Perform var1 + var2 and return the result of it.<br>
    return type:      BigInt type.<br>
@@ -148,11 +148,11 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(n + m) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(max(n, m)) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 2. Subtraction: 
-
+<pre>
    Syntax:           subtract(var1, var2);<br>
    Task:             Perform var1 - var2 and return the result of it.<br>
    return type:      BigInt type.<br>
@@ -160,11 +160,11 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(n + m) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(max(n, m)) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 3. Multiplication: 
-
+<pre>
    Syntax:           multiply(var1, var2);<br>
    Task:             Perform var1 * var2 and return the result of it.<br>
    return type:      BigInt type.<br>
@@ -172,11 +172,11 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(n * m) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(n + m) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 4. Division: 
-
+<pre>
    Syntax:           divide(var1, var2);<br>
    Task:             Perform var1 / var2 and return the result of it.<br>
    return type:      BigInt type.<br>
@@ -184,11 +184,11 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(n * m) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(max(n, m)) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 5. Modular:
-
+<pre>
    Syntax:           modulo(var1, var2);<br>
    Task:             Perform var1 % var2 and return the result of it.<br>
    return type:      BigInt type.<br>
@@ -196,7 +196,7 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(n * m) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(max(n, m)) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ### Relational Operations:
@@ -205,7 +205,7 @@ ___
 
 ##### 1. less than: 
    
-
+<pre>
    Syntax:           less_than(var1, var2);<br>
    Task:             Perform var1 < var2 and return the result of it.<br>
    return type:      int.<br>
@@ -213,12 +213,12 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 2. less than or equal to: 
    
-
+<pre>
    Syntax:           less_than_equal(var1, var2);<br>
    Task:             Perform var1 <= var2 and return the result of it.<br>
    return type:      int.<br>
@@ -226,12 +226,12 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 3. greater than: 
    
-
+<pre>
    Syntax:           greater_than(var1, var2);<br>
    Task:             Perform var1 > var2 and return the result of it.<br>
    return type:      int.<br>
@@ -239,12 +239,12 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 4. greater than or equal to: 
    
-
+<pre>
    Syntax:           greater_than_equal(var1, var2);<br>
    Task:             Perform var1 >= var2 and return the result of it.<br>
    return type:      int.<br>
@@ -252,12 +252,12 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 5. Equality: 
    
-
+<pre>
    Syntax:           are_equal(var1, var2);<br>
    Task:             Perform var1 == var2 and return the result of it.<br>
    return type:      int.<br>
@@ -265,12 +265,12 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 ##### 6. Not Equal:
 
-
+<pre>
    Syntax:           are_not_equal(var1, var2);<br>
    Task:             Perform var1 != var2 and return the result of it.<br>
    return type:      int.<br>
@@ -278,7 +278,7 @@ ___
    Algorithm Used:   School Mathematics.<br>
    Time Complexity:  O(max(n, m)) , where n = digits in var1, m = digits in var2.<br>
    Space Complexity: O(1) , To store the final value and return.<br>
-
+</pre>
 ___
 
 
