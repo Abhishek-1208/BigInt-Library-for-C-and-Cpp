@@ -31,6 +31,8 @@ int main() {
     result = modulo(var1, var2);
     _println(result);
     
+    result = power(itob(30), itob(19));
+    _println(result);
     
     // res = var1 < var2;
     res = less_than(var1, var2);
