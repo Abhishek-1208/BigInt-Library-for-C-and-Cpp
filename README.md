@@ -199,6 +199,18 @@ ___
 </pre>
 ___
 
+##### 6. power: 
+<pre>
+   Syntax:           power(var1, var2);<br>
+   Task:             Perform var1 ^ var2 and return the result of it.<br>
+   return type:      BigInt type.<br>
+   Exception:        Works for var2 >= 0.<br>
+   Algorithm Used:   Binary Exponentiation.<br>
+   Time Complexity:  O(log2(var2))<br>
+   Space Complexity: O(1)<br>
+</pre>
+___
+
 ### Relational Operations:
 
 #### Note: return value of all these 6 relations function will be either 1 or 0. 1 for true(condition is true) and 0 for false(condition is false).
