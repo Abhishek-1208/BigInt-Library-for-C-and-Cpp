@@ -70,9 +70,29 @@ Note: Here I will be only explaning about BigInt class and its feature, if you w
 
 ___
 
-## Working And Functionalities of BigInt Class:
+## Working of BigInt Class:
 
-### Working: First you have to include this "BigInt.h" file in your program. You can achieve this by writing following line: #include "BigInt.h"
+### Working: 
+1. clone the 2 repositories first to your local pc by writing following commands in git Bash 
+<pre>
+git clone "https://github.com/Abhishek-1208/BigInt-Library-for-C-and-Cpp"
+git clone "https://github.com/Abhishek-1208/string-file-for-C.git".
+</pre>
+
+2. Now Run following Commands
+<pre>
+gcc -c string.c BigInt.c
+ar -cvr libBigInt.a string.o BigInt.o
+</pre>
+
+Now you're done with the setup part.
+#### Note: Don't forget to include BigInt file in your program by writing #include "BigInt.h".
+
+### commands to compile your program:
+<pre>
+gcc file_name.c -o file_name.exe -L .lBigInt
+./file_name.exe to run your program.
+</pre>
 
 #### Initialization: 
 1. You can initialize a variable of BigInt type by writing "struct BigInt *var_name = _init();"
