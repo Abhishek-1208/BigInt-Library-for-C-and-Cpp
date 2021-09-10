@@ -1,63 +1,23 @@
-// Sample Program to understand working of BigInt library:
-//Note: please read readme file first to understand how things are working here.
 #include <stdio.h>
 #include "BigInt.h"
 
 int main() {
+        printf("Enter the 2 number: ");
+        struct BigInt *val1 = _input();
+        struct BigInt *val2 = _input();
 
-    struct BigInt *var1 = _assign("123");
-    struct BigInt *var2 = _assign("20");
-    struct BigInt *result;
-    int res;
+        printf("their addition is ");
+        _println(add(val1, val2));
 
+        printf("their subtraction is ");
+        _println(subtract(val1, val2));
 
-    // result = var1 + var2;
-    result = add(var1, var2);
-    _println(result);
-    
-    // result = var1 - var2;
-    result = subtract(var1, var2);
-    _println(result);
-    
-    // result = var1 * var2;
-    result = multiply(var1, var2);
-    _println(result);
-    
-    // result = var1 / var2;
-    result = divide(var1, var2);
-    _println(result);
-            
-    // result = var1 % var2;
-    result = modulo(var1, var2);
-    _println(result);
-    
-    // result = 30 raise to power 19;
-    result = power(itob(30), itob(19));
-    _println(result);
-    
-    // res = var1 < var2;
-    res = less_than(var1, var2);
-    if(res == 0) {
-         printf("var1 is greater than or equal to var2\n");    
-    }
+        printf("their multiplication is ");
+        _println(multiply(val1, val2));
 
-
-    // res = var1 >= var2;
-    res = greater_than_equal(var1, var2);
-    if(res == 1) {
-         printf("var1 is greater than or equal to var2\n");    
-    }
-    
-    // res = var1 != var2;
-    res = are_not_equal(var1, var2);
-    if(res == 0) {
-         printf("var1 is equal to var2\n");    
-    }
-    
-    //take input from user
-    result = _input();
-    _println(result);
-
+        printf("their division is ");
+        _println(divide(val1, val2));
+        printf("35 raise to power 21 is ");
+        _println(power(itob(35), itob(21)));
 
 }
-
