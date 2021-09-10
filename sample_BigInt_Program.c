@@ -31,6 +31,7 @@ int main() {
     result = modulo(var1, var2);
     _println(result);
     
+    // result = 30 raise to power 19;
     result = power(itob(30), itob(19));
     _println(result);
     
