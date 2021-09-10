@@ -95,8 +95,8 @@ gcc file_name.c -o file_name.exe -L .lBigInt
 </pre>
 
 #### Initialization: 
-1. You can initialize a variable of BigInt type by writing "struct BigInt *var_name = _init();"
-2. You can also initialize a variable with some pre defined value by passing it to function as follow: "struct BigInt *var_name = _init_with_value("123");"
+1. You can initialize a variable of BigInt type by writing "struct BigInt *var_name = _assign("");"
+2. You can also initialize a variable with some pre defined value by passing it to function as follow: "struct BigInt *var_name = __assign(struct BigInt *var2);"
 
 Now Since We're done with the initialization part, lets see the different functionalities and operations on BigInt.
 
@@ -312,6 +312,64 @@ ___
    Space Complexity: O(1) , To store the final value and return.<br>
 </pre>
 ___
+
+#### Utility Functions: 
+
+##### 1. itob(int number):
+<pre>
+   Syntax:           itob(number);<br>
+   Task:             converts integer data type to BigInt data type
+   return type:      BigInt data type pointer .<br>
+   Exception:        No exception.<br>
+   Algorithm Used:   School Mathematics.<br>
+   Time Complexity:  O(n) , where n = digits in number.<br>
+   Space Complexity: O(1) , To store the final value and return.<br>
+</pre>
+
+##### 2. swap(struct BigInt **inp1, struct BigInt **inp2):
+<pre>
+   Syntax:           swap(&var1, &var2);<br>
+   Task:             swaps the passed 2 BigInt data type variables value
+   return type:      void .<br>
+   Exception:        No exception.<br>
+   Algorithm Used:   brute force.<br>
+   Time Complexity:  O(1)<br>
+   Space Complexity: O(1) , To store the final value and return.<br>
+</pre>
+
+##### 3. _change(struct BigInt **inp, char *number):
+<pre>
+   Syntax:           _change(&var, "123");<br>
+   Task:             changes the value of first paramter to second parameter. i.e var = 123.
+   return type:      void .<br>
+   Exception:        Throws error if number is not representing an integer.<br>
+   Algorithm Used:   brute force.<br>
+   Time Complexity:  O(n) , where n = digits in number.<br>
+   Space Complexity: O(1) , To store the final value and return.<br>
+</pre>
+
+##### 4. __change(struct BigInt **inp, struct BigInt *number):
+<pre>
+   Syntax:           __change(&var, value);<br>
+   Task:             changes the value of first paramter to second parameter. i.e var = value.
+   return type:      void .<br>
+   Exception:        No exception.<br>
+   Algorithm Used:   brute force.<br>
+   Time Complexity:  O(n) , where n = digits in number.<br>
+   Space Complexity: O(1) , To store the final value and return.<br>
+</pre>
+
+##### 5. absolute(struct BigInt *number):
+<pre>
+   Syntax:           absolute(number);<br>
+   Task:             returns the absolute value of number
+   return type:      BigInt data type pointer .<br>
+   Exception:        No exception.<br>
+   Algorithm Used:   brute force.<br>
+   Time Complexity:  O(1).<br>
+   Space Complexity: O(1) , To store the final value and return.<br>
+</pre>
+
 
 
 ## See the sample Program by clicking [Here.](https://github.com/Abhishek-1208/BigInt-Library-for-C-and-Cpp/blob/main/sample_BigInt_Program.c)
