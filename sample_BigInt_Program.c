@@ -5,8 +5,8 @@
 
 int main() {
 
-    struct BigInt *var1 = _init_with_value("123");
-    struct BigInt *var2 = _init_with_value("20");
+    struct BigInt *var1 = _assign("123");
+    struct BigInt *var2 = _assign("20");
     struct BigInt *result;
     int res;
 
